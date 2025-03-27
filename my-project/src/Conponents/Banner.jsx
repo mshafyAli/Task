@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div>
     
-    <div className="relative   layout  text-white overflow-hidden py-12 lg:py-6 lg:h-[80vh] ha-uto flex justify-end items-end">
+    <div className="relative   layout  text-white overflow-hidden py-12 lg:py-6 lg:h-[90vh] h-auto flex justify-end items-end">
    
       
 
@@ -31,8 +31,8 @@ const Banner = () => {
           <div className="relative w-24 h-24 md:w-32 md:h-32">
             <div className="absolute inset-0 rounded-full border border-white/30 flex items-center justify-center">
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary flex items-center justify-center">
-                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-black flex items-center justify-center">
-                  <span className="text-black font-bold text-xl">P</span>
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-white flex items-center justify-center">
+                  <span className="text-white font-bold text-2xl">P</span>
                 </div>
               </div>
             </div>

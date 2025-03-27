@@ -18,13 +18,12 @@ const Navbar = () => {
   return (
     <nav className="relative border-b border-white/90 text-white  shadow-md">
       <div className="layout py-3 flex items-center justify-between gap-10">
-        {/* Logo */}
+        {/* Logo here */}
         <a href="/" className="flex items-center">
           <div className="flex items-center">
-            <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
-              <div className="h-8 w-8 rounded-full border-2 border-zinc-900 flex items-center justify-center">
-                <span className="text-zinc-900 font-bold text-xs">R</span>
-              </div>
+            <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center">
+              
+                <span className="text-primary text-2xl font-bold">P</span>
             </div>
             <span className="ml-2 text-xl font-bold tracking-wider">
               REATON
@@ -32,21 +31,21 @@ const Navbar = () => {
           </div>
         </a>
 
-        {/* Desktop Navigation */}
+        {/* Navigation section */}
         <div className="hidden lg:flex items-center space-x-4">
           {[
             "Home",
             "Portfolio",
             "Legacy",
-            "Pivatoni - Milano 1974",
+            "Pivatoni",
             "Rules & Perspectives",
             "Press & Media",
             "Contact Us",
           ].map((item, index) => (
             <a
               key={index}
-              href={`/${item.toLowerCase().replace(/\s+/g, "")}`}
-              className="text-sm hover:text-amber-500 transition-colors"
+              href={`#`}
+              className="text-sm hover:text-primary "
             >
               {item}
             </a>
@@ -77,7 +76,7 @@ const Navbar = () => {
           <Btn label={"JOIN US NOW"} />
         </div>
 
-        {/* Mobile Menu Button */}
+        
         <button
           className="lg:hidden text-white focus:outline-none"
           onClick={toggleMenu}
@@ -98,19 +97,19 @@ const Navbar = () => {
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <div className="container mx-auto px-4 py-2 space-y-3">
+        <div className="container mx-auto px-4 py-2 space-y-2">
           {[
             "Home",
             "Portfolio",
             "Legacy",
-            "Pivatoni - Milano 1974",
+            "Pivatoni",
             "Rules & Perspectives",
             "Press & Media",
             "Contact Us",
           ].map((item, index) => (
             <a
               key={index}
-              href={`/${item.toLowerCase().replace(/\s+/g, "")}`}
+              href={`#`}
               className="block py-2 text-sm hover:text-amber-500 transition-colors"
               onClick={toggleMenu}
             >
@@ -131,14 +130,9 @@ const Navbar = () => {
               </button>
             </div>
 
-            <a
-              href="/join"
-              className="bg-amber-600 hover:bg-amber-700 text-black font-medium px-4 py-2 rounded-full inline-flex items-center w-fit transition-colors"
-              onClick={toggleMenu}
-            >
-              JOIN US NOW
-              <HiOutlineChevronRight className="ml-1 h-4 w-4" />
-            </a>
+            <div>
+            <Btn label={"JOIN US NOW"} />
+            </div>
           </div>
         </div>
       </div>
